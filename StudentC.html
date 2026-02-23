@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ImgToPdf Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StudentC.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <img src="img_to_pdf-removebg-preview (1).png" alt="Logo" class="logo">
+        <h1></h1>
+    </div>
+</header>
+
+<section class="hero">
+  <B>
+    <h2>Convert  Images to PDF Instantly</h2>
+  </B>
+    <p>Upload your JPG or PNG files, arrange them easily, and download a clean, high-quality PDF instantly. Simple, fast, and perfect for assignments or projects.</p>
+</section>
+
+<div class="container">
+
+    <div id="drop-area">
+        <p>Drag & Drop Images Here</p>
+        <input type="file" id="fileInput" multiple accept="image/*">
+        <button class="select-btn">Select Images</button>
+    </div>
+
+    <div class="options">
+        <select id="pageSize">
+            <option value="a4">A4</option>
+            <option value="letter">Letter</option>
+        </select>
+
+        <select id="orientation">
+            <option value="portrait">Portrait</option>
+            <option value="landscape">Landscape</option>
+        </select>
+
+        <input type="text" id="pdfName" placeholder="Enter PDF file name">
+    </div>
+
+    <div id="preview"></div>
+
+    <button id="convertBtn">Convert to PDF</button>
+
+    <div class="loader" id="loader"></div>
+
+</div>
+
+<section class="dark-section">
+    <h2>Fast. Secure. Free.</h2>
+    <p>Your files stay in your browser. Nothing is uploaded.</p>
+</section>
+
+<footer class="footer">
+    <div class="footer-top">
+        <div>
+            <h3>ImgToPdf</h3>
+            <p>Professional Image to PDF Converter</p>
+        </div>
+
+        <div class="footer-links">
+            <div>
+                <h4>Services</h4>
+                <p>Image to PDF</p>
+                <p>Merge PDF</p>
+                <p>Compress PDF</p>
+            </div>
+
+          
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ImgToPdf.Developed by Team.C. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="Student.js"></script>
+</body>
+</html>
